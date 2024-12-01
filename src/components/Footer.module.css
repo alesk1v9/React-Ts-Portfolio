@@ -1,0 +1,33 @@
+.footer_container {
+    background-color: #1b1f24;
+    color: #fff;
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_items {
+    display: flex;
+    font-size: 32px;
+    cursor: pointer;
+    gap: 24px;
+    list-style: none;
+}
+.footer_items svg {
+    color: #fff;
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-4px) scale(1.1);
+    }
+}
+
+.footer_items svg:hover {
+    animation: translateY 0.8s infinite alternate;
+    color: blue;
+}

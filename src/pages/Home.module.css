@@ -1,0 +1,10 @@
+.home_container {
+    background-color: #1b1f24;
+    color: #fff;
+    padding-bottom: 16px;
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
