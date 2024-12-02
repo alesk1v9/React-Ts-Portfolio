@@ -19,7 +19,7 @@ const Nav = () => {
     <div className={classes.nav_container}>
       <div data-aos="fade-right" data-aos-duration="800"className={classes.nav_name}>
         <BsCodeSlash />
-        <h2>Developer Alex</h2>
+        <h2>Web Developer</h2>
       </div>
 
     <div className={classes.hamburguer} onClick={toggleMenu}>

@@ -11,16 +11,14 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duração da animação em milissegundos
-      once: true,     // Se a animação deve ocorrer apenas uma vez
+      duration: 1000, 
+      once: true,     
     });
   }, []);
   return (
-    <div className='app-container'>
+    <div >
       <Nav />
-        <main>
           <Outlet />
-        </main>
       <Footer />
     </div>
   )
