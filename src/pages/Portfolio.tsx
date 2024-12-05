@@ -66,8 +66,8 @@ const Portfolio = () => {
 
   return (
     <div className={classes.portfolio_conatainer}>
-      <h2>My Projects</h2>
-      <div className={classes.projects_container}>
+      <h2 data-aos="fade-left">My Projects</h2>
+      <div data-aos="fade-right" className={classes.projects_container}>
         {projects.map((project) => (
           <div className={classes.project_card} key={project.id}>
 
@@ -77,15 +77,17 @@ const Portfolio = () => {
 
             <div className={classes.project_details}>
               <h3>{project.title}</h3>
-              <div>{project.tools}</div>
+              <ul className={classes.details_list}>
+                {project.tools.map((tool) => (
+                  <li>{tool}</li>
+                ))}
+              </ul>
+
+              <ul className={classes.btns_container}>
+                <Link to={project.github_url} target="_blank"><FaGithub /></Link>
+                <Link to={project.deployed_url} target="_blank"> <GrDeploy /></Link>
+              </ul>
             </div>
-
-
-            <ul className={classes.btns_container}>
-              <Link to={project.github_url} target="_blank"><FaGithub /></Link>
-              <Link to={project.deployed_url} target="_blank"> <GrDeploy /></Link>
-            </ul>
-
           </div>
         ))}
       </div>
