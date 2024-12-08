@@ -93,6 +93,7 @@
     .projects_container {
         flex-direction: column;
         padding: 24px;
+        opacity: 1;
     }
     .portfolio_conatainer h2 {
         font-size: 20px;
