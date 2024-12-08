@@ -1,0 +1,78 @@
+.resume_container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1b1f24;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+.stack_container {
+    color: #FFFFFFCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resume {
+    margin-top: 60px;
+    text-align: center;
+}
+.resume h3 {
+    color: #FFFFFFCC;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.resume svg {
+    font-size: 32px;
+    color: #FFFFFFCC;
+    cursor: pointer;
+}
+.resume svg:hover {
+    color: blue;
+    animation: translateY 0.8s infinite alternate;
+}
+.skills svg {
+    font-size: 60px;
+    color: #FFFFFFCC;
+    cursor: pointer;
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-2px) scale(1.1);
+    }
+}
+
+.skills svg:hover {
+    color: blue;
+    animation: translateY 0.8s infinite alternate;
+}
+
+.stack_container h3 {
+    font-size: 42px;
+    text-align: center;
+    border-bottom: 1px solid blue;
+    margin-bottom: 60px;
+}
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 42px;
+    grid-row-gap: 42px;
+}
+
+@media screen and (max-width: 425px) {
+    .stack_container h3 {
+        font-size: 36px;
+    }
+    .skills svg {
+        font-size: 42px;
+    }
+}
