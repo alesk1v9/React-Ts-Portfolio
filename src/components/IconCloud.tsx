@@ -5,7 +5,7 @@ import nodedotjs from "simple-icons/icons/nodedotjs";
 import figma from "simple-icons/icons/figma";
 import react from "simple-icons/icons/react";
 import express from "simple-icons/icons/express";
-import mongoDB from "simple-icons/icons/mongoDB";
+// import mongoDB from "simple-icons/icons/mongoDB";
 import mySql from "simple-icons/icons/mySql";
 import jest from "simple-icons/icons/jest";
 import html from "simple-icons/icons/html5";
@@ -51,7 +51,7 @@ export const cloudProps: Omit<ICloud, 'children'> = {
   }
 
   const staticIcons = [typescript, javascript, figma, nodedotjs, express,
-     react, mongoDB, mySql, jest, html, css, git, jquery];
+     react, mySql, jest, html, css, git, jquery];
 
 export const IconCloud = () => {
 const color = "#000000"; // Define a default color
