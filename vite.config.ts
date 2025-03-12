@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['simple-icons', 'react-icon-cloud']
+      external: ['simple-icons/icons/typescript']
     }
   },
 });
