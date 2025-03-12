@@ -1,17 +1,5 @@
 import { Cloud, renderSimpleIcon, SimpleIcon, ICloud } from "react-icon-cloud";
-import typescript from "simple-icons/icons/typescript";
-import javascript from "simple-icons/icons/javascript";
-import nodedotjs from "simple-icons/icons/nodedotjs";
-import figma from "simple-icons/icons/figma";
-import react from "simple-icons/icons/react";
-import express from "simple-icons/icons/express";
-import mongoDB from "simple-icons/icons/mongoDB";
-import mySql from "simple-icons/icons/mySql";
-import jest from "simple-icons/icons/jest";
-import html from "simple-icons/icons/html5";
-import css from "simple-icons/icons/css3";
-import git from "simple-icons/icons/git";
-import jquery from "simple-icons/icons/jquery";
+import { siTypescript, siJavascript, siNodedotjs, siFigma, siReact, siExpress, siMongodb, siMysql, siJest, siHtml5, siCss3, siGit, siJquery } from "simple-icons";
 
 export const cloudProps: Omit<ICloud, 'children'> = {
     containerProps: {
@@ -50,11 +38,24 @@ export const cloudProps: Omit<ICloud, 'children'> = {
     })
   }
 
-  const staticIcons = [typescript, javascript, figma, nodedotjs, express,
-     react, mySql, jest, html, css, git, jquery, mongoDB];
+  const staticIcons: SimpleIcon[] = [
+    siTypescript,
+    siJavascript,
+    siNodedotjs,
+    siFigma,
+    siReact,
+    siExpress,
+    siMongodb,
+    siMysql,
+    siJest,
+    siHtml5,
+    siCss3,
+    siGit,
+    siJquery
+  ];
 
 export const IconCloud = () => {
-const color = "#000000"; // Define a default color
+const color = "#000000";
   const cloudIcons = staticIcons.map((i) => renderCustomIcon(i, color))
 
   return <Cloud {...cloudProps}>
