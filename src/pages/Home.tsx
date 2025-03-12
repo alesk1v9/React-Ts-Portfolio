@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
-import profileImg from "../assets/images/profile.png";
+import profileImg from "../assets/images/pic.jpg";
 import classes from "./Home.module.css"
 
 const Home = () => {
   return (
     <div className={classes.home_container}>
+
        <div className={classes.about_container} data-aos="fade-right"> 
         <h1>Hello, I am <span>Alexsander</span> <br/>
         Nice to meet you!</h1>
-        <p>Self-motivated with a strong passion for technology. I started my journey into
-        programming focusing on web development. Skilled in solving problems,
-        collaborating in team environments, and building digital experiences.</p>
+        <p>I am a self-motivated Full-Stack Developer with hands-on experience building responsive, optimized,
+        and user-friendly web applications using technologies such as JavaScript, TypeScript, React. 
+        I've completed the Rutgers Coding Bootcamp, where I worked on collaborative projects using Kanban methodology,
+        further sharpening my teamwork and agile development skills.</p>
         <ul className={classes.about_buttons}>
           <Link to="/portfolio" className={classes.btn}>See Projects</Link>
           <Link to="/contact" className={classes.btn}>Contact Me</Link>

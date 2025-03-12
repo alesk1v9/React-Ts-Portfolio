@@ -63,6 +63,8 @@
     }
 }
 
+
+
 .nav_link:hover {
     animation: translateY 1.2s infinite alternate;
 }

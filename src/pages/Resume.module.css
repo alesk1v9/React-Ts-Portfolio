@@ -9,6 +9,10 @@
     align-items: center;
     gap: 48px;
 }
+.stack_container h2 {
+    font-size: 32px;
+    border-bottom: #0000ff 1px solid;
+}
 .stack_container {
     color: #FFFFFFCC;
     display: flex;
@@ -34,10 +38,9 @@
     color: blue;
     animation: translateY 0.8s infinite alternate;
 }
-.skills svg {
-    font-size: 60px;
-    color: #FFFFFFCC;
-    cursor: pointer;
+
+.skills {
+    width: 80%;
 }
 
 @keyframes translateY {
@@ -49,24 +52,13 @@
     }
 }
 
-.skills svg:hover {
-    color: blue;
-    animation: translateY 0.8s infinite alternate;
-}
-
-.stack_container h3 {
+/* .stack_container h3 {
     font-size: 42px;
     text-align: center;
     border-bottom: 1px solid blue;
     margin-bottom: 60px;
-}
-.skills {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 42px;
-    grid-row-gap: 42px;
-}
+} */
+
 
 @media screen and (max-width: 425px) {
     .stack_container h3 {
