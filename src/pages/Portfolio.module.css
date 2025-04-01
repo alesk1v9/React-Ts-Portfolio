@@ -21,7 +21,7 @@
     padding: 0 16px;
 }
 .project_card {
-    flex: 1 1 calc(33.333% - 22px);
+    width: calc(33.333% - 22px);
     box-sizing: border-box;
     border: 1px solid #FFFFFFCC;
     border-radius: 8px;
@@ -94,6 +94,9 @@
         flex-direction: column;
         padding: 24px;
         opacity: 1;
+    }
+    .project_card {
+        width: 100%;
     }
     .portfolio_conatainer h2 {
         font-size: 20px;

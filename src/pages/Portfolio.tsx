@@ -8,6 +8,7 @@ import expenseTrackerTmg from "../assets/images/project-images/expensetrackerimg
 import recipeFinderImg from "../assets/images/project-images/recipefinderimg.png";
 import todoImg from "../assets/images/project-images/todoimg.png";
 import weatherImg from "../assets/images/project-images/weatherimg.png";
+import codecommenter from "../assets/images/project-images/codecommenter.png";
 import classes from "./Portfolio.module.css";
 
 
@@ -55,7 +56,15 @@ const Portfolio = () => {
         "deployed_url": "https://alesk1v9.github.io/Weather-Dashboard/"
     },
     {
-        "id": 6,
+      "id": 6,
+      "title": "Code Commenter",
+      "tools": ["REACT", "TAILWIND", "TS"],
+      "image": codecommenter,
+      "github_url": "https://github.com/alesk1v9/Code-Commenter.git",
+      "deployed_url": "https://codecommenter.netlify.app/"
+  },
+    {
+        "id": 7,
         "title": "To-Do App",
         "tools": ["REACT", "EXPRESS", "MONGODB", "NODEJS"],
         "image": todoImg,
