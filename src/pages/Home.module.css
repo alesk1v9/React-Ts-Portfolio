@@ -89,6 +89,7 @@
         width: 300px;
     }
     .about_container {
+        width: 80%;
         text-align: center;
     }
     .about_container h1 {
