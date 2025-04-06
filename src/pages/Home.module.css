@@ -27,6 +27,7 @@
 .about_container p {
     font-size: 20px;
     color: #FFFFFFCC;
+    padding-left: 36px;
 }
 .btn {
     text-decoration: none;
