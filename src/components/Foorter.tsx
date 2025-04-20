@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedinIn, } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTiktok } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import classes from "./Footer.module.css"
 
@@ -12,6 +12,9 @@ const Foorter = () => {
           <Link 
           to="https://www.linkedin.com/in/alexsander-souza-0169482b5/" target="_blank">
             <FaLinkedinIn /></Link>
+            <Link 
+          to="https://www.tiktok.com/@leetstreak?lang=en" target="_blank">
+            <FaTiktok /></Link>
         </ul>
     </footer>
   )

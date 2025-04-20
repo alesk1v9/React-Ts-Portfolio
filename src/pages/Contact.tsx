@@ -23,8 +23,12 @@ const Contact = () => {
       message: message,
       email: email
     };
+
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
     
-    emailjs.send('service_akf43kc', 'template_hphs9vj', templateParams, 'AfaI_7_I8d_WMyVoV')
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
     .then(() => {
       alert("Email sent");
 
