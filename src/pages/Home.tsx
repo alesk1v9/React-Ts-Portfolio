@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import profileImg from "../assets/images/pic.jpg";
 import classes from "./Home.module.css"
+import resumePdf from '../assets/AlexsanderSouza_WebDev_2YoE.pdf';
+import { FaFileDownload } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -16,6 +18,7 @@ const Home = () => {
         <ul className={classes.about_buttons}>
           <Link to="/portfolio" className={classes.btn}>See Projects</Link>
           <Link to="/contact" className={classes.btn}>Contact Me</Link>
+          <a href={resumePdf} className={classes.btn} download>Resume <FaFileDownload /></a>
         </ul>
       </div>
       <div className={classes.img_container} data-aos="fade-left">

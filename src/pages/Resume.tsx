@@ -1,6 +1,6 @@
 import { FaFileDownload } from "react-icons/fa";
 import classes from './Resume.module.css';
-import resumePdf from '../assets/resume.pdf';
+import resumePdf from '../assets/AlexsanderSouza_WebDev_2YoE.pdf';
 import IconCloud from "../components/IconCloud";
 
 
